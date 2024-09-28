@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: "Montserrat", system-ui;
+}
+.tabs {
+    margin: 150px auto;
+    position: relative;
+    max-width: 750px;
+    background-color: #c9c9c9;
+    box-shadow: 0 48px 80px rgba(0, 0, 0, 0.3);
+}
+
+.tabs__btns {
+    display: flex;
+    justify-content: flex-start;
+    /* gap: 3px; */
+    background-color: #c9c9c9;
+    
+}
+
+.tab__btn {
+    /* cursor: pointer;
+    background-color: bisque;
+    padding: 10px;
+    width: 130px;
+    text-align: center; */
+
+    
+        width: auto;
+        padding: 20px 30px;
+        background-color: #c9c9c9;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+        color: #7f7f7f;
+        transition: background-color 0.1s, color 0.1s;
+      
+}
+
+.tab__btn.active {
+    /* background-color: rgb(198, 180, 154); */
+    background: #fff;
+  color:rgba(51, 51, 51, 0.831);
+}
+
+.tabs__items {
+    box-shadow: 0 48px 80px rgba(0, 0, 0, 0.3);
+}
+
+.tab__text {
+    position: absolute;
+    top: 100%;
+    /* padding: 15px; */
+    padding: 20px 30px 30px;
+    background-color: #fff;
+    /* background-color: rgb(198, 180, 154); */
+    /* max-width: 500px; */
+    visibility: hidden;
+}
+
+.tab__text.active {
+    visibility: visible;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: #333;
+}
